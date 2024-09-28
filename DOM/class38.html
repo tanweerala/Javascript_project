@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .main{
+            color: red;
+        }
+        .first{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+        }
+        .sec{
+            width: 100px;
+            height: 50px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 class ="y" id="x">Hello</h1>
+    <h1  class="y">Hello copy</h1>
+    <h1 class ="y">Hello 2</h1> -->
+    <div>
+        <div></div>
+    </div>
+</body>
+</html>
+<script>
+//  // var h1 =document.getElementById('x');
+//  var value =document.getElementsByClassName('y')
+//  var arr=document.getElementsByTagName('h1')
+
+
+
+ /* onsole.log(arr[1].innerHTML)
+ console.log(value [1].innerHTML) */
+
+//  console.log(x)
+ //console.log(x.innerHTML)
+
+ //var select =document.querySelector('body')
+ //console.log(select)
+
+
+
+var body =document.querySelector('body')
+var h1 =document.createElement('h1')
+h1.innerHTML = 'Tanweer Alam'
+h1.className='main'
+
+h1.style.color='red'
+
+var p =document.createElement('p')
+p.innerHTML='tanwe'
+
+p.style.color='black'
+p.style.fontSize='30px'
+//p.style.backgroundColor='blue'
+p.style.textAlign='center'
+
+var img =document.createElement('img')
+img.src ='pp.png'
+
+
+var a=document.createElement('a')
+a.href='www.google.com'
+a.innerHTML='Google'
+a.target='_blank'
+
+
+
+
+ var div1 =document.createElement('div')
+ div1.className='first'
+
+ var div2 =document.createElement('div')
+ div2.className='sec'
+
+div1.append(div2)
+
+body.append(h1 ,p,img , a,div1)
+
+</script>
